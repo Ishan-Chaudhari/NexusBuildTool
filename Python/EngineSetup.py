@@ -19,7 +19,7 @@ subprocess.call(["git", "submodule", "update", "--init", "--recursive"])
 if (premakeInstalled):
     if platform.system() == "Windows":
         print("\nRunning premake...")
-        subprocess.call([os.path.abspath("./Build System/GenerateProjects.bat"), "nopause"])
+        subprocess.call([os.path.abspath("./NexusBuildTool/GenerateProjects.bat"), "nopause"])
 
     print("\nSetup completed!")
 else:
